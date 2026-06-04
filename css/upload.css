@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    
+    height: 100px;
+    text-align: left,center;
+    padding:10px;
+
+    border-bottom: 2px solid #5c5c5c;
+}
+
+.header a{
+    color: black;
+    font-size: 50px;
+   text-decoration: none;
+}
+
+.main{
+    display: flex;
+    padding: 10px;
+    padding-top: 30px;
+    height:calc(100vh - 100px);
+}
+
+.instructions{
+    
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    border-right:1px solid #5c5c5c;
+  
+    text-align: center;
+}
+.instructions h2{
+    font-size: 40px;
+}
+
+
+/* タブレット向け（画面幅が 768px 以上、1024px 以下のとき） */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* ここにタブレット用のスタイルを書く */
+}
+
+/* スマホ向け（画面幅が 767px 以下のとき） */
+@media screen and (max-width: 767px) {
+    /* ここにスマホ用のスタイルを書く */
+}
