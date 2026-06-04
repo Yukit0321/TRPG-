@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,11 +19,24 @@
 
         </div>
         <div class="upload-content">
+            <h1>PDFアップロード</h1>
 
-<h1>upload</h1>
+            <input type="file" id="pdf" accept=".pdf">
+
+            <button onclick="uploadPDF()">
+                アップロード
+            </button>
+
+            <hr>
+
+            <p id="url"></p>
+
+            <div id="qrcode"></div>
+
         </div>
     </div>
-    
-<script src="js/upload.js"></script>
+
+    <script src="js/upload.js"></script>
 </body>
+
 </html>
