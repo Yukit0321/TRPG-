@@ -10,7 +10,11 @@
 
 <body>
     <div class="header">
-        <a href="index.html">Logo</a>
+        <a href="index.html">
+
+            <img src="/photo/冰鞠微笑logo.png">
+
+        </a>
     </div>
 
     <div class="main">
@@ -19,19 +23,37 @@
 
         </div>
         <div class="upload-content">
-            <h1>PDFアップロード</h1>
+            <h2>PDFアップロード</h2>
 
-            <input type="file" id="pdf" accept=".pdf">
+            <div class="upload">
+                <div class="upload-set">
+                    <input type="file" id="pdf" accept=".pdf" class="input">
+                    <label for="pdf" class="file-btn">
+                        PDFを選択
+                    </label>
+                    <span id="fileName">未選択</span>
+                </div>
+                <button onclick="uploadPDF()" class="upload-btn">
+                    アップロード
+                </button>
 
-            <button onclick="uploadPDF()">
-                アップロード
-            </button>
+            </div>
 
-            <hr>
+            <div class="url"> 
+                <h4>URL:</h4>
+                <span id="copyurl">URL</span>
 
-            <p id="url"></p>
+                <button class="copy-btn" onclick="copyText()">
+                    コピー
+                </button>
 
-            <div id="qrcode"></div>
+                
+
+            </div>
+            <div id="qrcode">
+                    <img src="photo/QR_643436.png">
+             </div>
+            
 
         </div>
     </div>

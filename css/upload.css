@@ -8,36 +8,128 @@
     
     height: 100px;
     text-align: left,center;
-    padding:10px;
+   
 
     border-bottom: 2px solid #5c5c5c;
 }
 
-.header a{
-    color: black;
-    font-size: 50px;
-   text-decoration: none;
+.logoset{
+    display: flex;
 }
+
+.header img{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+}
+
+
 
 .main{
     display: flex;
     padding: 10px;
     padding-top: 30px;
+    padding-bottom: 0px;
     height:calc(100vh - 100px);
 }
 
 .instructions{
-    
     width: 50%;
     height: 100%;
     overflow: auto;
     border-right:1px solid #5c5c5c;
-  
     text-align: center;
 }
-.instructions h2{
+
+h2{
     font-size: 40px;
 }
+
+.upload-content{
+    width: 50%;
+    text-align: center;
+}
+
+.upload{
+    display: flex;
+    flex-direction: column;
+    padding:100px;
+    padding-top: 50px;
+    gap: 20px;
+}
+
+
+.input{
+    display: none;
+}
+.upload-set{
+    display: flex;
+    width: 100%;
+}
+
+.file-btn{
+    
+    padding:12px 24px;
+    background:#2196F3;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    
+    width: 50%;
+}
+
+.upload span{
+    padding:12px 10px;
+    margin: 0 auto;
+    text-align: left;
+    width: 50%;
+}
+
+.file-btn:hover{
+    opacity:0.8;
+}
+
+.upload-btn{
+    padding:12px 24px;
+    border:none;
+    border-radius:8px;
+    background:#4CAF50;
+    color:white;
+    cursor:pointer;
+}
+
+.upload-btn:hover{
+    opacity:0.8;
+}
+
+.url{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    
+}
+
+.url h4{
+    font-size: 30px;
+}
+
+#copyurl{
+    width: 500px;
+    margin: auto 0;
+    font-size: 30px;
+    border: 1px solid #000000;
+}
+
+#qrcode{
+
+    padding-top: 30px;
+    align-items: center;
+}
+#qrcode img{
+    width: 180px;
+}
+
+
 
 
 /* タブレット向け（画面幅が 768px 以上、1024px 以下のとき） */
