@@ -68,7 +68,6 @@ h2 {
   color: white;
   border-radius: 8px;
   cursor: pointer;
-
   width: 50%;
 }
 
@@ -112,7 +111,9 @@ h2 {
   margin: auto 0;
   font-size: 30px;
   border: 1px solid #000000;
-  overflow: hidden;
+
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 #qrcode {
@@ -123,11 +124,55 @@ h2 {
 }
 
 /* タブレット向け（画面幅が 768px 以上、1024px 以下のとき） */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  /* ここにタブレット用のスタイルを書く */
-}
+/* @media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+} */
 
 /* スマホ向け（画面幅が 767px 以下のとき） */
+/* @media screen and (max-width: 767px) {
+  
+} */
 @media screen and (max-width: 767px) {
-  /* ここにスマホ用のスタイルを書く */
+  .header {
+    height: 50px;
+  }
+  .header img {
+    height: 50px;
+    width: auto;
+  }
+
+  .main {
+    display: unset;
+  }
+  .instructions {
+    height: 500px;
+    width: calc(100% - 20px);
+    margin: 10px;
+    overflow: auto;
+    border: #000000 solid 1px;
+    border-radius: 30px;
+    margin-bottom: 40px;
+  }
+
+  .upload-content {
+    margin-top: 40px;
+    padding: 20px;
+    border-top: #000000 1px solid;
+    width: 100%;
+  }
+
+  .upload {
+    padding: 0;
+    padding-top: 40px;
+  }
+
+  .url {
+    margin-top: 100px;
+  }
+  .file-btn {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+  }
 }

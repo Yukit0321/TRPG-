@@ -1,8 +1,10 @@
 /*
     ファイル名表示
 */
+
 document.getElementById("pdf").addEventListener("change", function () {
   console.log("ファイルが選択されました:", this.files); // ログ追加
+
   document.getElementById("fileName").textContent = this.files.length
     ? this.files[0].name
     : "未選択";
@@ -79,7 +81,7 @@ async function uploadPDF() {
       return;
     }
 
-    const url = `${location.origin}/select.html?id=${id}`;
+    const url = `${location.origin}/sinario/select.html?id=${id}&file=${encodeURIComponent(file.name)}`;
     console.log("生成されたURL:", url); // ログ追加
 
     /*

@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 100px;
+  text-align: left, center;
+
+  border-bottom: 2px solid #5c5c5c;
+}
+
+.logoset {
+  display: flex;
+}
+
+.header img {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 40px;
+  padding-bottom: 50px;
+}
+.kyouyuu {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  gap: 50px;
+}
+
+.kyouyuu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.kyouyuu img {
+  width: 15%;
+  aspect-ratio: 1/1;
+}
+
+.viewBtn {
+  padding: 24px 24px;
+  background: #2196f3;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 50%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+.downloadBtn {
+  padding: 24px 24px;
+  background: #4caf50;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 50%;
+  aspect-ratio: 1 / 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* タブレット向け（画面幅が 768px 以上、1024px 以下のとき） */
+/* @media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+} */
+
+/* スマホ向け（画面幅が 767px 以下のとき） */
+/* @media screen and (max-width: 767px) {
+  
+} */
+@media screen and (max-width: 767px) {
+  .header {
+    height: 50px;
+  }
+  .header img {
+    height: 50px;
+    width: auto;
+  }
+  .kyouyuu {
+    display: unset;
+    width: 100%;
+  }
+
+  .main {
+    padding: 10px;
+  }
+  .main h1 {
+    padding-bottom: 20px;
+  }
+
+  .viewBtn {
+    width: 100%;
+    aspect-ratio: unset;
+    height: min-content;
+  }
+
+  .downloadBtn {
+    width: 100%;
+    aspect-ratio: unset;
+    height: min-content;
+  }
+}
