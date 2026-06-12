@@ -1,143 +1,133 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header{
-    
-    height: 100px;
-    text-align: left,center;
-   
+.header {
+  height: 100px;
+  text-align: left, center;
 
-    border-bottom: 2px solid #5c5c5c;
+  border-bottom: 2px solid #5c5c5c;
 }
 
-.logoset{
-    display: flex;
+.logoset {
+  display: flex;
 }
 
-.header img{
-    width: 100px;
-    height: 100px;
-    padding: 5px;
+.header img {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
 }
 
-
-
-.main{
-    display: flex;
-    padding: 10px;
-    padding-top: 30px;
-    padding-bottom: 0px;
-    height:calc(100vh - 100px);
+.main {
+  display: flex;
+  padding: 10px;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  height: calc(100vh - 100px);
 }
 
-.instructions{
-    width: 50%;
-    height: 100%;
-    overflow: auto;
-    border-right:1px solid #5c5c5c;
-    text-align: center;
+.instructions {
+  width: 50%;
+  height: 100%;
+  overflow: auto;
+  border-right: 1px solid #5c5c5c;
+  text-align: center;
 }
 
-h2{
-    font-size: 40px;
+h2 {
+  font-size: 40px;
 }
 
-.upload-content{
-    width: 50%;
-    text-align: center;
+.upload-content {
+  width: 50%;
+  text-align: center;
 }
 
-.upload{
-    display: flex;
-    flex-direction: column;
-    padding:100px;
-    padding-top: 50px;
-    gap: 20px;
+.upload {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  padding-top: 50px;
+  gap: 20px;
 }
 
-
-.input{
-    display: none;
+.input {
+  display: none;
 }
-.upload-set{
-    display: flex;
-    width: 100%;
-}
-
-.file-btn{
-    
-    padding:12px 24px;
-    background:#2196F3;
-    color:white;
-    border-radius:8px;
-    cursor:pointer;
-    
-    width: 50%;
+.upload-set {
+  display: flex;
+  width: 100%;
 }
 
-.upload span{
-    padding:12px 10px;
-    margin: 0 auto;
-    text-align: left;
-    width: 50%;
+.file-btn {
+  padding: 12px 24px;
+  background: #2196f3;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+
+  width: 50%;
 }
 
-.file-btn:hover{
-    opacity:0.8;
+.upload span {
+  padding: 12px 10px;
+  margin: 0 auto;
+  text-align: left;
+  width: 50%;
 }
 
-.upload-btn{
-    padding:12px 24px;
-    border:none;
-    border-radius:8px;
-    background:#4CAF50;
-    color:white;
-    cursor:pointer;
+.file-btn:hover {
+  opacity: 0.8;
 }
 
-.upload-btn:hover{
-    opacity:0.8;
+.upload-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
 }
 
-.url{
-    width: 100%;
-    display: flex;
-    justify-content:center;
-    
+.upload-btn:hover {
+  opacity: 0.8;
 }
 
-.url h4{
-    font-size: 30px;
+.url {
+  width: 100%;
+  display: none;
+  justify-content: center;
 }
 
-#copyurl{
-    width: 500px;
-    margin: auto 0;
-    font-size: 30px;
-    border: 1px solid #000000;
+.url h4 {
+  font-size: 30px;
 }
 
-#qrcode{
-
-    padding-top: 30px;
-    align-items: center;
+#copyurl {
+  width: 500px;
+  height: 50px;
+  margin: auto 0;
+  font-size: 30px;
+  border: 1px solid #000000;
+  overflow: hidden;
 }
-#qrcode img{
-    width: 180px;
+
+#qrcode {
+  padding-top: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
-
-
-
 
 /* タブレット向け（画面幅が 768px 以上、1024px 以下のとき） */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    /* ここにタブレット用のスタイルを書く */
+  /* ここにタブレット用のスタイルを書く */
 }
 
 /* スマホ向け（画面幅が 767px 以下のとき） */
 @media screen and (max-width: 767px) {
-    /* ここにスマホ用のスタイルを書く */
+  /* ここにスマホ用のスタイルを書く */
 }

@@ -1,64 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>シナリオデバイス共有サイト</title>
-    <link rel="stylesheet" href="css/upload.css">
-</head>
+    <link rel="stylesheet" href="css/upload.css" />
+  </head>
 
-<body>
+  <body>
     <div class="header">
-        <a href="index.html">
-
-            <img src="/photo/冰鞠微笑logo.png">
-
-        </a>
+      <a href="index.html">
+        <img src="photo/冰鞠微笑logo.png" />
+      </a>
     </div>
 
     <div class="main">
-        <div class="instructions">
-            <h2>使い方説明</h2>
+      <div class="instructions">
+        <h2>使い方説明</h2>
+      </div>
+      <div class="upload-content">
+        <h2>PDFアップロード</h2>
 
+        <div class="upload">
+          <div class="upload-set">
+            <input type="file" id="pdf" accept=".pdf" class="input" />
+            <label for="pdf" class="file-btn"> PDFを選択 </label>
+            <span id="fileName">未選択</span>
+          </div>
+          <button onclick="uploadPDF()" class="upload-btn">アップロード</button>
         </div>
-        <div class="upload-content">
-            <h2>PDFアップロード</h2>
 
-            <div class="upload">
-                <div class="upload-set">
-                    <input type="file" id="pdf" accept=".pdf" class="input">
-                    <label for="pdf" class="file-btn">
-                        PDFを選択
-                    </label>
-                    <span id="fileName">未選択</span>
-                </div>
-                <button onclick="uploadPDF()" class="upload-btn">
-                    アップロード
-                </button>
+        <div class="url">
+          <h4>URL:</h4>
+          <span id="copyurl"></span>
 
-            </div>
-
-            <div class="url"> 
-                <h4>URL:</h4>
-                <span id="copyurl">URL</span>
-
-                <button class="copy-btn" onclick="copyText()">
-                    コピー
-                </button>
-
-                
-
-            </div>
-            <div id="qrcode">
-                    <img src="photo/QR_643436.png">
-             </div>
-            
-
+          <button class="copy-btn" onclick="copyText()">コピー</button>
         </div>
+        <div id="qrcode"></div>
+      </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <script src="js/upload.js"></script>
-</body>
-
+  </body>
 </html>
